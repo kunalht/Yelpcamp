@@ -1,0 +1,14 @@
+<% include partials/header %>
+<h1> campground page</h1>
+
+<a class="btn btn-default" href="#" role="button">Link</a>
+
+
+ <% campgrounds.forEach(function(campgrounds){ %>
+<div>
+    <li> <%= campgrounds.name %> </li>
+    <img src="<%= campgrounds.image %> " class="img-responsive" width="600" height="700" >
+    </div>
+<% }); %>   
+
+<% include partials/footer %> 
