@@ -1,6 +1,8 @@
 var express = require("express");
 var app = express();
+var bodyParser=require("body-parser");
 app.set("view engine", "ejs");
+app.use(bodyParser.urlencoded({extended:true}));
 
 app.get("/", function (req, res) {
     res.render("home.ejs");
@@ -17,6 +19,13 @@ app.get("/campground", function (req, res) {
     res.render("campground", {campgrounds:campgrounds});
 });
 
+app.post("/campground", function(req, res){
+    res.send("post");
+})
+
+app.get("/campground/new", function(req, res){
+    res.render("new.ejs")
+})
 
 app.listen(3000, function () {
     console.log("Yelpcamp server started");
