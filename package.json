@@ -9,6 +9,7 @@
   "author": "kunal",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.16.0"
+    "body-parser": "^1.16.0",
+    "mongoose": "^4.7.8"
   }
 }
