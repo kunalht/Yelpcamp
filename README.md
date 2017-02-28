@@ -1,5 +1,5 @@
 # Yelpcamp
-yelpcamp- camping website [WIP]
+yelpcamp- camping website
 
 
 start with
